@@ -46,12 +46,12 @@ const main = async () => {
         const operator = answers.operator;
         const result = calculate(num1, num2, operator);
         console.log(
-        // chalk.green(`The result of ${num1} ${operator} ${num2} is ${result}`)
-        chalk.green(`The result of `), chalk.bgCyan(`${num1} ${operator} ${num2} `), chalk.green(`= `), chalk.bgCyan(` ${result} `));
+            // chalk.green(`The result of ${num1} ${operator} ${num2} is ${result}`)
+            chalk.green(`The result of `), chalk.bgCyan(`${num1} ${operator} ${num2} `), chalk.green(`= `), chalk.bgCyan(` ${result} `));
     }
     catch (error) {
         const fixedError = error;
         console.error(chalk.red(`Error: ${fixedError.message}`));
     }
 };
-main();
+main(); //call the function
